@@ -1,6 +1,6 @@
 # Simple Compass ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
-Simple Compass App written in Xamarin.iOS
+Simple Compass App written with Xamarin.iOS
 
 ![](https://github.com/mihailgolban/SimpleCompass/blob/master/images/morning.jpg?raw=true)
 ![](https://github.com/mihailgolban/SimpleCompass/blob/master/images/afternoon.jpg?raw=true)
