@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4784">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7867">
+                                <rect key="frame" x="45" y="187.5" width="324" height="324"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="27078">
+                                        <rect key="frame" x="15" y="128" width="97" height="18"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27084">
+                                                <rect key="frame" x="0.0" y="0.0" width="97" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                                <color key="textColor" red="0.99607843137254903" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="27085">
+                                                <rect key="frame" x="0.0" y="0.0" width="97" height="18"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="359°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27086">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="18"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="31462"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="North" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27088">
+                                                        <rect key="frame" x="45" y="0.0" width="52" height="18"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="52" id="31219"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="magneticNeedle" translatesAutoresizingMaskIntoConstraints="NO" id="29546">
+                                        <rect key="frame" x="8" y="8" width="287" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="29546" secondAttribute="height" multiplier="45:180" id="30473"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7867" secondAttribute="height" multiplier="1:1" id="7869"/>
+                                    <constraint firstAttribute="centerX" secondItem="27078" secondAttribute="centerX" id="27079"/>
+                                    <constraint firstItem="27078" firstAttribute="centerY" secondItem="7867" secondAttribute="centerY" multiplier="1.5" id="27080"/>
+                                    <constraint firstAttribute="centerX" secondItem="29546" secondAttribute="centerX" id="29547"/>
+                                    <constraint firstAttribute="centerY" secondItem="29546" secondAttribute="centerY" id="29548"/>
+                                    <constraint firstItem="29546" firstAttribute="height" secondItem="7867" secondAttribute="height" multiplier="0.9" id="30712"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Good afternoon!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34859">
+                                <rect key="frame" x="91" y="47" width="278" height="110"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4784" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="top" id="4785"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4784" secondAttribute="bottom" id="4786"/>
+                            <constraint firstAttribute="trailing" secondItem="4784" secondAttribute="trailing" id="4787"/>
+                            <constraint firstItem="4784" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4788"/>
+                            <constraint firstItem="4784" firstAttribute="centerX" secondItem="7867" secondAttribute="centerX" id="7876"/>
+                            <constraint firstItem="7867" firstAttribute="centerY" secondItem="4784" secondAttribute="centerY" multiplier="0.95" id="7877"/>
+                            <constraint firstItem="7867" firstAttribute="leading" secondItem="4784" secondAttribute="leading" constant="45" id="7880"/>
+                            <constraint firstItem="4784" firstAttribute="trailing" secondItem="7867" secondAttribute="trailing" constant="45" id="7881"/>
+                            <constraint firstItem="4784" firstAttribute="centerX" secondItem="34859" secondAttribute="centerX" id="34860"/>
+                            <constraint firstItem="34859" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="34862"/>
+                            <constraint firstItem="7867" firstAttribute="top" secondItem="34859" secondAttribute="bottom" id="34863"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="4784" id="name-outlet-4784"/>
+                        <outlet property="compassView" destination="7867" id="name-outlet-7867"/>
+                        <outlet property="degreesLabel" destination="27086" id="name-outlet-27086"/>
+                        <outlet property="directionLabel" destination="27088" id="name-outlet-27088"/>
+                        <outlet property="greetings" destination="34859" id="name-outlet-34859"/>
+                        <outlet property="magneticNeedle" destination="29546" id="name-outlet-29546"/>
+                        <outlet property="stackviewDegrees" destination="27085" id="name-outlet-27085"/>
+                        <outlet property="timeLabel" destination="27084" id="name-outlet-27084"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
